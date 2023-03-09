@@ -59,14 +59,14 @@ const Marketplace = () => {
   return (
     <Section>
       
-      <div className="title">
+      <div className="title" data-aos="fade-left">
         <h2>NFT Marketplace</h2>
         <p>Lorem, ipsum. is simply dummy text of the printing and typesetting
           industry. Lorem Ispum has been the industry's standard.
         </p>
       </div>
 
-      <div className="marketPlaceTypes">
+      <div className="marketPlaceTypes" data-aos="fade-down">
         {
           marketPlaceType.map((text, index) => {
             return <Button text={text} key={index} blue={index === 0}/>;
@@ -74,7 +74,7 @@ const Marketplace = () => {
         }
       </div>
 
-      <div className="marketPlaces">
+      <div className="marketPlaces" data-aos="fade-down">
         {
           marketPlaceData.map(({image, name}) => {
             return (

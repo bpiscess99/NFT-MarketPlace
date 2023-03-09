@@ -33,7 +33,7 @@ const Footer = () => {
   ];
   return (
     <Container>
-      <div className="row">
+      <div className="row" data-aos="fade-right">
         
         <div className="brand">
           <img src={logo} alt="logo" />
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row" data-aos="fade-left">
         <h3>Our Services</h3>
         <ul className="list">
           {servicesLinks.map((link) => {
@@ -56,7 +56,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="row">
+      <div className="row" data-aos="fade-up">
         <h3>Company</h3>
         <ul className="list">
         {companyLinks.map((link) => {
@@ -65,7 +65,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="row">
+      <div className="row" data-aos="fade-down">
         <h3>Contact Us</h3>
         <ul>
           {contactInfo.map(({icon, value}) => {

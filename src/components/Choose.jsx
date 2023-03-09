@@ -8,11 +8,11 @@ const Choose = () => {
   return (
     <Section>
 
-    <div className="image">
+    <div className="image" data-aos="fade-up">
         <img src={choose} alt="choose" />
     </div>
 
-    <div className="content">
+    <div className="content" data-aos="fade-down">
         <h2>Why should you Choose Our Website ?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit in temporibus quia, id fugit illum, laudantium iste, pariatur voluptatem ducimus quis aliquid. Iure culpa dignissimos explicabo eos soluta amet error neque sit excepturi cumque!</p>
         <Button text="Read More" blue/>

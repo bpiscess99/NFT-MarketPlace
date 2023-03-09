@@ -15,7 +15,7 @@ const Clients = () => {
       {clients.map((client, index) => {
         return (
         <div className="client" key={index}>
-        <img src={client} alt="client" />
+        <img src={client} alt="client" data-aos="fade-down"/>
         </div>
         );
       })}

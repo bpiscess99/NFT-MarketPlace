@@ -7,7 +7,7 @@ const Subscribe = () => {
   return (
     <Section>
 
-     <div className="content">
+     <div className="content" data-aos="fade-left">
         <h2>Subscribe for Get update every New Offers</h2>
         <p>Lorem, ipsum. is simply dummy text of the printing and typesetting
           industry. Lorem Ispum has been the industry's standard.</p>
@@ -20,7 +20,7 @@ const Subscribe = () => {
         
         </div>
 
-        <div className="image">
+        <div className="image" data-aos="fade-right">
             <img src={subscribe} alt="subscribe" />
         </div>
 

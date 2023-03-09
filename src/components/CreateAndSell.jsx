@@ -32,7 +32,7 @@ const CreateAndSell = () => {
   return (
     <Section>
        
-        <div className="title">
+        <div className="title" data-aos="fade-up">
         <h2>Create and Sell Your NFTs</h2>
       </div>
 
@@ -40,11 +40,11 @@ const CreateAndSell = () => {
        
         <div className="ellipse"></div>
 
-        <div className="content">
+        <div className="content" data-aos="fade-up">
           {data.map(({ image, title, description, buttonText }, index) => {
             return (
               <div className="createAndSell" key={index}>
-                <div className="image">
+                <div className="image" >
                   <img src={image} alt="create and sell" />
                 </div>
                 <h3>{title}</h3>

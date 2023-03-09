@@ -1,11 +1,18 @@
-import React from 'react'
-import Navbar from './Navbar'
-import styled from "styled-components"
-import hero from '../assets/hero.png'
-import heroText from '../assets/heroText.png'
-import Button from './Button'
+import React, { useEffect } from 'react';
+import Navbar from './Navbar';
+import styled from "styled-components";
+import hero from '../assets/hero.png';
+import heroText from '../assets/heroText.png';
+import Button from './Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <Section>
       <Navbar/>
@@ -13,11 +20,11 @@ const Home = () => {
       
       <div className="container">
         
-        <div className="content">
+        <div className="content" data-aos="fade-right">
           <h1>
           Explore Our
             <span>
-              <img src={heroText} alt="herotext" />
+              <img src={heroText} alt="herotext"/>
             </span>
              Hero Text Digital NFT Market Place
           </h1>
@@ -53,7 +60,7 @@ const Home = () => {
 
         </div>
 
-      <div className="image">
+      <div className="image" data-aos="fade-left">
         <img src={hero} alt="hero" />
       </div>
 
