@@ -78,7 +78,7 @@ const Marketplace = () => {
         {
           marketPlaceData.map(({image, name}) => {
             return (
-              <div className="marketPlace">
+              <div className="marketPlace" key={name}>
 
                 <div className="image"><img src={image} alt="marketplace" />
                 </div>

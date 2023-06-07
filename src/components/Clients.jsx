@@ -11,6 +11,7 @@ import client6 from '../assets/client6.png';
 const Clients = () => {
     const clients = [client1, client2, client3, client4, client5, client6]
   return (
+    
     <Section>
       {clients.map((client, index) => {
         return (
@@ -19,9 +20,10 @@ const Clients = () => {
         </div>
         );
       })}
+      
     </Section>
   )
-}
+};
 
 export default Clients;
 

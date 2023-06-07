@@ -48,6 +48,7 @@ justify-content: space-between;
 align-items: center;
 margin: 0 2rem;
 
+
 .toggle{
     display: none;
 }

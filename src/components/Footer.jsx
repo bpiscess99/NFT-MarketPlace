@@ -42,7 +42,7 @@ const Footer = () => {
         <p className="description">1901 Thornidge Cir. Shiloh, hawaii 81063</p>
         <div className="social-icons">
           {socialIcons.map((icon) => {
-          return <div className="icon">{icon}</div>;
+          return <div className="icon" >{icon}</div>;
           })}
         </div>
       </div>
@@ -65,12 +65,13 @@ const Footer = () => {
         </ul>
       </div>
 
+      
       <div className="row" data-aos="fade-down">
         <h3>Contact Us</h3>
         <ul>
           {contactInfo.map(({icon, value}) => {
             return (
-              <li>
+              <li key={value}>
                 <div className="icon">{icon}</div>    
             <span>{value}</span>
             </li>
@@ -93,7 +94,7 @@ grid-template-columns: repeat(4, 1fr);
 padding: 8rem;
 gap: 7rem;
 .row {
-  color: #9ea7ad;
+  /* color: #9ea7ad; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -128,7 +129,6 @@ gap: 7rem;
     flex-direction: column;
     gap: 1rem;
     li {
-      display: flex;
       gap: 2rem;
       display: flex;
       align-items: center;
