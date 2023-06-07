@@ -94,7 +94,7 @@ grid-template-columns: repeat(4, 1fr);
 padding: 8rem;
 gap: 7rem;
 .row {
-  /* color: #9ea7ad; */
+  color: #9ea7ad;
   display: flex;
   flex-direction: column;
   gap: 2rem;
